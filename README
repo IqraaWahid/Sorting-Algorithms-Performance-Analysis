@@ -1,0 +1,42 @@
+1)Summary of Implementation:
+For this lab, I first implemented the insertionSort.c and then mergeSort.c. For each .c files I implemented the provided mySort functions without the matrics to see if it works, and then modified the implementation according to the given instructions (provided myCompare, myCopy and mySwap functions). Both algorithms sort the input data correctly and output correct comparison and copy results.
+
+2) Analysis:
+Let n represent the number of elements to sort...
+
+Best Case: sorted
+Average Case: random
+Worst Case: reverse sorted
+
+Insertion Sort -----------------------------------------
+
+Best Case:
+Number of Comparisons: n - 1
+Number of Moves: 2(n-1)
+Swaps:0
+Time Complexity: O(n)
+
+Average Case:
+Number of Comparisons: n(n-1)/4
+Number of Moves: n(n-1)/4 + 2(n-1)
+Swaps: 0
+Time Complexity:O( n^2)
+
+Worst Case:
+Number of Comparisons: n(n-1)/2
+Number of Moves: n(n-1)/2 + 2(n-1)
+Swaps: 0
+Time Complexity: O(n^2)
+
+Merge Sort ----------------------------------------------
+
+Note: all logarithms used below have a base of 2:
+
+Best/Average/Worst Case:
+Number of Comparisons: (n-1) log(n)
+Number of Moves: 2n log(n)
+Swaps: 0
+
+Time Complexity: O(n log(n))
+Number of Levels: O(log(n))
+Work Per Level: O(n)
